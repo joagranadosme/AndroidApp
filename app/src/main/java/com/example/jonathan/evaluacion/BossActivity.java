@@ -9,5 +9,12 @@ public class BossActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_boss);
+
+        BossFragment bossFragment = (BossFragment) getSupportFragmentManager().findFragmentById(R.id.boss_container);
+
+        if(bossFragment == null){
+            bossFragment = BossFragment.newInstance();
+            getSupportFragmentManager().beginTransaction().add(R.id.boss_container, bossFragment).commit();
+        }
     }
 }
