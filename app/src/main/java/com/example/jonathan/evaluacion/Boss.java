@@ -61,4 +61,13 @@ public class Boss {
     public void setImage(int image) {
         this.image = image;
     }
+
+    public String toString(){
+        return  "Boss{" +
+                "Id='" + id + '\'' +
+                ", Company='" + company + '\'' +
+                ", Name='" + name + '\'' +
+                ", Title='" + title + '\'' +
+                '}';
+    }
 }
