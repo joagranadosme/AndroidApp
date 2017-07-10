@@ -1,5 +1,6 @@
 package com.example.jonathan.evaluacion;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -41,6 +42,9 @@ public class BossFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Boss currentBoss = bossAdapter.getItem(i);
                 Toast.makeText(getActivity(), currentBoss.getName(), Toast.LENGTH_LONG).show();
+                //Starting new activity
+                Intent intent = new Intent(getContext(), GoalSetting.class);
+                startActivity(intent);
             }
         });
 

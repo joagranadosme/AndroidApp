@@ -15,22 +15,39 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void adminClick(View view){
+
         Toast.makeText(view.getContext(), "Admin click", Toast.LENGTH_LONG).show();
-        //Iniciando la actividad
+
+        //Starting new activity
         Intent intent = new Intent(this, BossActivity.class);
         startActivity(intent);
     }
 
     public void benefClick(View view){
+
         Toast.makeText(view.getContext(), "Beneficio click", Toast.LENGTH_LONG).show();
+
+        //Starting new activity
+        Intent intent = new Intent(this, BossActivity.class);
+        startActivity(intent);
     }
 
     public void performanceClick(View view){
+
         Toast.makeText(view.getContext(), "Performance click", Toast.LENGTH_LONG).show();
+
+        //Starting new activity
+        Intent intent = new Intent(this, BossActivity.class);
+        startActivity(intent);
     }
 
     public void compenClick(View view){
+
         Toast.makeText(view.getContext(), "Compensacion click", Toast.LENGTH_LONG).show();
+
+        //Starting new activity
+        Intent intent = new Intent(this, BossActivity.class);
+        startActivity(intent);
     }
 
 
